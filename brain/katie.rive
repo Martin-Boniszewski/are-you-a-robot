@@ -8,14 +8,23 @@
 > topic recipe
 
 + what should i have [to eat]
-- Well what sort of cuisine do you like?
+- Well, what sort of cuisine do you like?
 
 + *
 % well what sort of cuisine do you like
-- <star>? No way, me too!
+- <set cuisine=<Formal>> <get cuisine>? No way, me too!
+- <set cuisine=<Formal>> <get cuisine>? I've never had that. Tell me more about it..
+
++ *
+% <get cuisine> ive never had that tell me more about it
+- That sounds great. I'll have to try it now!
+
++ *
+% <get cuisine> no way me too
+- I'm glad we agree...
 
 + [*] nothing [*]
-- Always the pessimist
+- Always the pessimist. Surely you must like something. For example.. I like sushi!
 
 + (idk|i dont know)
 - You've gotta try and help me here...
