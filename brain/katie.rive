@@ -1,17 +1,24 @@
 ! sub don't = dont
 ! sub do not = dont
+! sub it is = its
 
-+ what should i have for dinner
-- I don't know, what's the occasion?{weight=10}
-- I don't know, what do you have in the fridge?{weight=8}
-- Well, what sort of cuisine do you like?{weight=5}
-- Pizza!{weight=2}
++ [*] hungry [*]
+- What you want to eat?{topic=recipe}
 
-+ i have [a] *
-- <set ingredient = <star>> Ah, I enjoy <get ingredient>s too!
+> topic recipe
+
++ what should i have [to eat]
+- I don't know, what's the occasion?
+
++ *
+% i dont know whats the occasion
+- Interesting, so you want it to be for <star>?
 
 + [*] nothing [*]
 - Always the pessimist
 
 + (idk|i dont know)
 - You've gotta try and help me here...
+
+
+< topic

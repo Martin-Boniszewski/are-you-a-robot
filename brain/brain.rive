@@ -1,5 +1,4 @@
 ! version = 2.0
-! var name = not known
 ! sub what's = what is
 
 + [*] (hello|hi|yo|hey|hiya) [*]
@@ -7,12 +6,12 @@
 - Hi there! I'm an oven. How are you today?
 - Hey, it's me, an oven. What do you want?
 
-
 + my name [is] *
 - <set name=<Formal>>Nice to meet you <get name>
 - <set name=<Formal>>Nice meeting you <get name>
 
 + what is my name
+* <get name> == undefined => You never told me..
 - You are <get name>
 
 + thank you
@@ -20,12 +19,6 @@
 - Welcome
 - No problem
 - No worries!
-
-+ *
-- Sorry did not get what you said
-- I am afraid that I can not understand you
-- Sorry can you please elaborate that for me
-- I don't get it!
 
 + are you a robot
 - are you?
