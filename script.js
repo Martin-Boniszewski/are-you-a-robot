@@ -1,6 +1,6 @@
 let bot = new RiveScript();
 
-const brains = ["brain/subs.rive", "brain/brain.rive", "brain/katie.rive"];
+const brains = ["brain/subs.rive", "brain/brain.rive", "brain/katie.rive", "brain/Naiwen.rive"];
 
 bot.loadFile(brains).then(botReady).catch(botNotReady);
 
