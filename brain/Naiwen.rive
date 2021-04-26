@@ -1,4 +1,4 @@
-+ frozen [food]
++ [*] frozen [*]
 - I can help you to change the temperature. How many times do you need? {topic=times}
 
 > topic times
@@ -21,6 +21,6 @@
   + *
   -	How much time do you need, it must be shown on the package. 
   -	please check the package.
-  -	please use minutes as the unit.
-  - 1 min please put like 01 min.
+  -	please use minutes as the unit.{weight=2}
+  - 1 min please put like 01 min.{weight=1}
 < topic
