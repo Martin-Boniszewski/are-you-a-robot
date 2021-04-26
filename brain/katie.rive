@@ -1,8 +1,17 @@
+! sub don't = dont
+! sub do not = dont
+
 + what should i have for dinner
 - I don't know, what's the occasion?{weight=10}
 - I don't know, what do you have in the fridge?{weight=8}
 - Well, what sort of cuisine do you like?{weight=5}
 - Pizza!{weight=2}
 
-+ i have a *
++ i have [a] *
 - <set ingredient = <star>> Ah, I enjoy <get ingredient>s too!
+
++ [*] nothing [*]
+- Always the pessimist
+
++ (idk|i dont know)
+- You've gotta try and help me here...

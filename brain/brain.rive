@@ -8,7 +8,7 @@
 - Hey, it's me, an oven. What do you want?
 
 
-+ my name is *
++ my name [is] *
 - <set name=<Formal>>Nice to meet you <get name>
 - <set name=<Formal>>Nice meeting you <get name>
 
