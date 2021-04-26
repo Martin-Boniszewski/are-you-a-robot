@@ -8,11 +8,11 @@
 > topic recipe
 
 + what should i have [to eat]
-- I don't know, what's the occasion?
+- Well what sort of cuisine do you like?
 
 + *
-% i dont know whats the occasion
-- Interesting, so you want it to be for <star>?
+% well what sort of cuisine do you like
+- <star>? No way, me too!
 
 + [*] nothing [*]
 - Always the pessimist
