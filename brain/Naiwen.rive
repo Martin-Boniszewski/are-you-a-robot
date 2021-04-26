@@ -1,25 +1,26 @@
-+ frozen food
++ frozen [food]
 - I can help you to change the temperature. How many times do you need? {topic=times}
 
 > topic times
 
-  // This will match if the word " min " exists ANYWHERE in their message
-+ [*] 20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35 [*]
-- it will be delicious 
-+ [*] 36|37|38|39|40|60|45|50|55 [*]
-- it maybe fine. 
-- overcooked.
-- hope it can not be carb. 
-+ [*]1|2|3|4|5|6|7|8|9|10|11|12|13|14|15|16|17|18|19[*]
-- this fish is so raw, he’s still finding nemo.
-- it’s raw!
-- this pork is so raw, it is still singing 'hakuna matata'.
-- this food is so frozen, it just started singing 'let it go'.
-- that chicken has so much raw, it can still across the road.
-- this potato is so undercooked, it can still play a part in toy story.
+  // This will match if the word " number " exists ANYWHERE in their message
+  + [*] 20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35 [*]
+  - it will be delicious {topic=random}
+  + [*] 36|37|38|39|40|60|45|50|55 [*]
+  - it maybe fine. {topic=random}
+  - overcooked.
+  - hope it can not be carb. 
+  + [*] 01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19 [*]
+  - this fish is so raw, he’s still finding nemo.
+  - it’s raw!
+  - this pork is so raw, it is still singing 'hakuna matata'.
+  - this food is so frozen, it just started singing 'let it go'.
+  - that chicken has so much raw, it can still across the road.
+  - this potato is so undercooked, it can still play a part in toy story.
 
- + *
--	How much time do you need, it must be shown on the package. 
--	please check the package.
--	please use minutes as the unit.
+  + *
+  -	How much time do you need, it must be shown on the package. 
+  -	please check the package.
+  -	please use minutes as the unit.
+  - 1 min please put like 01 min.
 < topic
