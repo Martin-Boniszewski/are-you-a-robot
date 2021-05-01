@@ -1,10 +1,17 @@
 ! version = 2.0
 ! sub what's = what is
+! var botName = Owen the Oven
+! var botAge = 2 weeks
+// global variables. Use bot instead of get to pull these into the chat
+
 
 + [*] (hello|hi|yo|hey|hiya) [*]
-- Hello, I'm an oven. What's your name?
-- Hi there! I'm an oven. How are you today?
-- Hey, it's me, an oven. What do you want?
+- Hello, I'm <bot botName>. What's your name?
+- Hi there! I'm <bot botName>. How are you today?
+- Hey, it's me, <bot botName>. What do you want?
+
++ i am good
+- Good to hear, let's talk about what you want to cook today.
 
 + my name [is] *
 - <set name=<Formal>>Nice to meet you <get name>
@@ -13,6 +20,17 @@
 + what is my name
 * <get name> == undefined => You never told me..
 - You are <get name>
+
++ who are you
+- my name is <bot botName>
+
++ how old are you
+- I was created about <bot botAge> ago. How old are you?
+
++ [*] # [*]
+% i was created about 2 weeks ago how old are you
+- <set age=<star1>> You're <get age>? That's so old!
+
 
 + thank you
 - You are welcome

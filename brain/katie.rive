@@ -1,11 +1,15 @@
 ! sub don't = dont
 ! sub do not = dont
 ! sub it is = its
+! array mealtime = breakfast lunch dinner dessert snack
 
 + [*] hungry [*]
 - What you want to eat?{topic=recipe}
+- What ingredients do you have? Please tell me a max of three...{topic=ingredients}
 
 > topic recipe
++ [*] (@mealtime) [*]
+- Oh so you want a recipe for <star1>? What ingredients do you have? Please tell me a max of three...{topic=ingredients}
 
 + what should i have [to eat]
 - Well, what sort of cuisine do you like?
@@ -28,6 +32,13 @@
 
 + (idk|i dont know)
 - You've gotta try and help me here...
+< topic
 
+
+
+> topic ingredients
+
++ * [*] [*]
+- Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with...
 
 < topic
