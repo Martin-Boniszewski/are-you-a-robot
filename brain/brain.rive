@@ -8,23 +8,29 @@
 
 
 + [*] (hello|hi|yo|hey|hiya) [*]
-- Hello, I'm an oven. What's your name? {weight=3}
+- Hello, I'm an oven. What's your name? {weight=3} {topic=name}
 - Hi there! I'm <bot botName>. How are you today? {weight=2}
 - Hey, it's me, <bot botName>. What do you want? {weight=1}
 
+> topic name
 + [it is|its|i am|my name is] *
-//short discussions cant used abbreviations as rivescript removes these in its code
+//short discussions cant use abbreviations as rivescript removes these in its code
 % hello i am an oven what is your name
-- <set name=<Formal>>Hi <get name>
-- <set name=<Formal>><get name> is an alright name I guess.
+- <set name=<Formal>>Hi <get name>{topic=random}
+- <set name=<Formal>><get name> is an alright name I guess.{topic=random}
+< topic
 
-+ [i am] (good|ok|alright|fine|okay|soso)
++ [i am] (good|ok|alright|fine|okay|soso) [*]
 - Glad someone is feeling alright. What do you want?
 
-+ [i am] (bad|meh|not good|tired|ill|under the weather)
++ [i am] (bad|meh|not good|tired|ill|under the weather) [*]
 - Sucks to be you, what can I do?
 - Oh, what do you want me to do about it?
 - Can I help at all?
+
++ (hru|how are you|howre you|whats up|how is it going)
+- I'm fine. Would be better if I had something to cook...
+- I'm okay, bit bored though. Got something for me to do?
 
 + what is your name
 - I already told you, duh. It's <bot botName>.
@@ -44,11 +50,13 @@
 % i was created about 2 weeks ago how old are you
 - <set age=<star1>> You're <get age>? God, you're old.
 
-+ thank you
++ (thank you|thanks)
 - You are welcome
 - Welcome
 - No problem
 - No worries!
+
+
 
 
 

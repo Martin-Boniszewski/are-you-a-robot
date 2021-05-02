@@ -6,44 +6,52 @@
 ! array mealtime = breakfast lunch dinner dessert snack
 ! array swears = shit fuck shitty fucking fucker bastard dickhead bitch
 
-+ what did i just say
-- You just said "<input1>"
-
 + [*] hungry [*]
 - Well have you got some ingredients already or do you just want me to give you a recipe?
 
-+ [*] recipe [*] 
++ [*] (recipe|idea) [*] 
 - What sort of cuisine do you like? {topic=recipe}
 
++ [*] ingredients [*] 
+- Can you list the ingredients you have for me? {topic=ingredients}
+
 + [*] (@mealtime) [*]
-- Oh so you want a recipe for <star1>? What ingredients do you have? Please tell me a max of three...{topic=ingredients}
+* <star1> == snack => It's <star1> time? Ok, Well do you have some ingredients or do you want me to give you an idea?
+- Is it time for <star1> already? Well do you have some ingredients or do you want me to give you a recipe?
+
 
 > topic recipe
-
-+ * [*]
++ [i like] * [*]
 - <set cuisine=<Formal>> <get cuisine>? Damn, me too.
 - <set cuisine=<Formal>> <get cuisine>? Huh, I've never had that. Tell me more about it..
 
 + *
-% <get cuisine> huh ive never had that tell me more about it
-- Tbh that sounds great, might have to try it now.
+% <get cuisine> huh i have never had that tell me more about it
+- To be honest that sounds great, might have to try it now.
 
 + *
 % <get cuisine> damn me too
 - I'm glad we agree...
 
 + [*] nothing [*]
-- Always the pessimist. Surely you must like something. For example.. I like sushi!
+- Always the pessimist. Surely you must like something. For example.. I like Japanese food.
 
 + (idk|i dont know)
 - You've gotta try and help me here...
 < topic
 
++ what did i just say
+- You just said "<input1>"
+
++ why did you say that
+- I said "<reply1>" because you said "<input1>"
+
+
 
 
 > topic ingredients
 
-+ _ [_] [_]
++ _ [and] [_] [and] [_]
 - Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with...
 
 < topic
