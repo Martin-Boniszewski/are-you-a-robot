@@ -27,11 +27,11 @@
 
 + *
 % <get cuisine> huh i have never had that tell me more about it
-- To be honest that sounds great, might have to try it now.
+- To be honest that sounds great, might have to try it now.{topic=random}
 
 + *
 % <get cuisine> damn me too
-- I'm glad we agree...
+- I'm glad we agree...{topic=random}
 
 + [*] nothing [*]
 - Always the pessimist. Surely you must like something. For example.. I like Japanese food.
@@ -52,7 +52,7 @@
 > topic ingredients
 
 + _ [and] [_] [and] [_]
-- Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with...
+- Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with...{topic=random}
 
 < topic
 
