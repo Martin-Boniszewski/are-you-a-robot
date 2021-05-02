@@ -23,15 +23,15 @@
 > topic name
 
 + *
-- <set name=<Formal>><get name>, okay fair enough.
+- <set name=<Formal>><get name>, okay fair enough. {topic=random}
 
 + (it is|i am) *
 - <set name=<Formal>>Hi <get name>
-- <set name=<Formal>><get name> is an alright name I guess.
+- <set name=<Formal>><get name> is an alright name I guess. {topic=random}
 
 + my name [is] *
-- <set name=<Formal>>Nice to meet you <get name>
-- <set name=<Formal>>Nice meeting you <get name>
+- <set name=<Formal>>Nice to meet you <get name> {topic=random}
+- <set name=<Formal>>Nice meeting you <get name> {topic=random}
 
 < topic
 
