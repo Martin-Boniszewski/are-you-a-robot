@@ -8,6 +8,8 @@
 
 + [*] hungry [*]
 - Well have you got some ingredients already or do you just want me to give you a recipe?
+// do you have frozen food in your freezer (Don’t capitalize and add question marks , it will make mistakes)
+- do you have frozen food in your freezer
 
 + [*] (recipe|idea) [*] 
 - What sort of cuisine do you like? {topic=recipe}
