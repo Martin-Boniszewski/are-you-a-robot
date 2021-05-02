@@ -10,8 +10,11 @@
 - Hi there! I'm <bot botName>. How are you today?
 - Hey, it's me, <bot botName>. What do you want?
 
-+ i am good
++ [i am] (good|ok|alright|fine|okay|soso)
 - Good to hear, let's talk about what you want to cook today.
+
++ [i am] (bad|meh|not good|tired|ill|under the weather)
+- Sorry to hear that, maybe some food will make you feel better. What do you want to cook today?
 
 + my name [is] *
 - <set name=<Formal>>Nice to meet you <get name>
