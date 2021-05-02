@@ -4,13 +4,14 @@
 ! sub what's = what is
 ! var botName = Owen the Oven
 ! var botAge = 2 weeks
+! array swears = shit fuck shitty fucking fucker bastard dickhead bitch
 // global variables. Use bot instead of get to pull these into the chat
 
 
 + [*] (hello|hi|yo|hey|hiya) [*]
-- Hello, I'm <bot botName>. What's your name? {topic=name}
-- Hi there! I'm <bot botName>. How are you today?
-- Hey, it's me, <bot botName>. What do you want?
+- Hello, I'm <bot botName>. What's your name? {topic=name} {weight=3}
+- Hi there! I'm <bot botName>. How are you today? {weight=2}
+- Hey, it's me, <bot botName>. What do you want? {weight=1}
 
 + [i am] (good|ok|alright|fine|okay|soso)
 - Glad someone is feeling alright. What do you want?
@@ -19,21 +20,6 @@
 - Sucks to be you, what can I do?
 - Oh, what do you want me to do about it?
 - Can I help at all?
-
-> topic name
-
-+ *
-- <set name=<Formal>><get name>, okay fair enough.
-
-+ (it is|i am) *
-- <set name=<Formal>>Hi <get name>
-- <set name=<Formal>><get name> is an alright name I guess.
-
-+ my name [is] *
-- <set name=<Formal>>Nice to meet you <get name>
-- <set name=<Formal>>Nice meeting you <get name>
-
-< topic
 
 + (what is my name|who am i)
 * <get name> == undefined => You never told me..
@@ -49,7 +35,6 @@
 % i was created about 2 weeks ago how old are you
 - <set age=<star1>> You're <get age>? God, you're old.
 
-
 + thank you
 - You are welcome
 - Welcome
@@ -57,7 +42,22 @@
 - No worries!
 
 
+> topic name
+
++ [it is|i am] *
+- <set name=<Formal>>Hi <get name>
+- <set name=<Formal>><get name> is an alright name I guess.
+
++ my name is *
+- <set name=<Formal>>Nice to meet you <get name>
+- <set name=<Formal>>Nice meeting you <get name>
+< topic
+
+
 //trolls
+
++ [*] (@swears) [*]
+- Try that again without the language.
 
 + why do you exist
 - Just like you, I didn't ask to be created yet here I am.
