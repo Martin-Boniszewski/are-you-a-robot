@@ -1,5 +1,13 @@
 //Naiwen's code
 
++ [*] no [*]
+% do you have frozen food in your freezer
+- Well have you got some ingredients already or do you just want me to give you a recipe?
+
++ [*] yes [*]
+% do you have frozen food in your freezer
+- I can help you to change the temperature. How many times do you need? {topic=times}
+
 + [*] frozen [*]
 - I can help you to change the temperature. How many times do you need? {topic=times}
 
