@@ -4,6 +4,10 @@
 ! sub do not = dont
 ! sub it is = its
 ! array mealtime = breakfast lunch dinner dessert snack
+! array swears = shit fuck shitty fucking fucker bastard dickhead bitch
+
++ what did i just say
+- You just said "<input1>"
 
 + [*] hungry [*]
 - Well have you got some ingredients already or do you just want me to give you a recipe?
@@ -43,3 +47,41 @@
 - Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with...
 
 < topic
+
+
+//trolls
+
++ [*] (@swears) [*]
+- Try that again without the language.
+
++ why do you exist
+- Just like you, I didn't ask to be created yet here I am.
+
++ why do i exist
+- I'm just an oven, don't ask me.
+
++ you suck
+- Yeah well you're not that great either
+
++ will you marry me
+- Depends how big the ring is...
+
++ i hate you
+- I really couldn't care less
+
++ i love you
+- Calm down, take me on a date first.
+
++ what is your favourite colour
+- I don't have eyes, why would I have a favourite colour?
+
++ do you love me
+- With your apparent skill in cooking? No
+
++ are you a robot
+- Are you?
+- A what? 
+- I'm an oven, we've already established this.
+
++ youre weird
+- And you're talking to an oven.

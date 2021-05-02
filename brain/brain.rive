@@ -4,16 +4,17 @@
 ! sub what's = what is
 ! var botName = Owen the Oven
 ! var botAge = 2 weeks
-! array swears = shit fuck shitty fucking fucker bastard dickhead bitch
 // global variables. Use bot instead of get to pull these into the chat
 
 
 + [*] (hello|hi|yo|hey|hiya) [*]
-- Hello, I'm <bot botName>. What's your name? {weight=3}
+- Hello, I'm an oven. What's your name? {weight=3}
 - Hi there! I'm <bot botName>. How are you today? {weight=2}
 - Hey, it's me, <bot botName>. What do you want? {weight=1}
 
-+ (it is|its|i am|my name is) *
++ [it is|its|i am|my name is] *
+//short discussions cant used abbreviations as rivescript removes these in its code
+% hello i am an oven what is your name
 - <set name=<Formal>>Hi <get name>
 - <set name=<Formal>><get name> is an alright name I guess.
 
@@ -51,39 +52,3 @@
 
 
 
-//trolls
-
-+ [*] (@swears) [*]
-- Try that again without the language.
-
-+ why do you exist
-- Just like you, I didn't ask to be created yet here I am.
-
-+ why do i exist
-- I'm just an oven, don't ask me.
-
-+ you suck
-- Yeah well you're not that great either
-
-+ will you marry me
-- Depends how big the ring is...
-
-+ i hate you
-- I really couldn't care less
-
-+ i love you
-- Calm down, take me on a date first.
-
-+ what is your favourite colour
-- I don't have eyes, why would I have a favourite colour?
-
-+ do you love me
-- With your apparent skill in cooking? No
-
-+ are you a robot
-- Are you?
-- A what? 
-- I'm an oven, we've already established this.
-
-+ youre weird
-- And you're talking to an oven.
