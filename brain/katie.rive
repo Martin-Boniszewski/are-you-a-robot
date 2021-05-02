@@ -1,31 +1,31 @@
+//Katie's code
+
 ! sub don't = dont
 ! sub do not = dont
 ! sub it is = its
 ! array mealtime = breakfast lunch dinner dessert snack
 
 + [*] hungry [*]
-- What you want to eat?{topic=recipe}
-- What ingredients do you have? Please tell me a max of three...{topic=ingredients}
+- Well have you got some ingredients already or do you just want me to give you a recipe?
+
++ [*] recipe [*] 
+- What sort of cuisine do you like? {topic=recipe}
 
 + [*] (@mealtime) [*]
 - Oh so you want a recipe for <star1>? What ingredients do you have? Please tell me a max of three...{topic=ingredients}
 
 > topic recipe
 
-+ what should i have [to eat]
-- Well, what sort of cuisine do you like?
++ * [*]
+- <set cuisine=<Formal>> <get cuisine>? Damn, me too.
+- <set cuisine=<Formal>> <get cuisine>? Huh, I've never had that. Tell me more about it..
 
 + *
-% well what sort of cuisine do you like
-- <set cuisine=<Formal>> <get cuisine>? No way, me too!
-- <set cuisine=<Formal>> <get cuisine>? I've never had that. Tell me more about it..
+% <get cuisine> huh ive never had that tell me more about it
+- Tbh that sounds great, might have to try it now.
 
 + *
-% <get cuisine> ive never had that tell me more about it
-- That sounds great. I'll have to try it now!
-
-+ *
-% <get cuisine> no way me too
+% <get cuisine> damn me too
 - I'm glad we agree...
 
 + [*] nothing [*]

@@ -1,3 +1,5 @@
+// general starting chat
+
 ! version = 2.0
 ! sub what's = what is
 ! var botName = Owen the Oven
@@ -6,33 +8,46 @@
 
 
 + [*] (hello|hi|yo|hey|hiya) [*]
-- Hello, I'm <bot botName>. What's your name?
+- Hello, I'm <bot botName>. What's your name? {topic=name}
 - Hi there! I'm <bot botName>. How are you today?
 - Hey, it's me, <bot botName>. What do you want?
 
 + [i am] (good|ok|alright|fine|okay|soso)
-- Good to hear, let's talk about what you want to cook today.
+- Glad someone is feeling alright. What do you want?
 
 + [i am] (bad|meh|not good|tired|ill|under the weather)
-- Sorry to hear that, maybe some food will make you feel better. What do you want to cook today?
+- Sucks to be you, what can I do?
+- Oh, what do you want me to do about it?
+- Can I help at all?
+
+> topic name
+
++ *
+- <set name=<Formal>><get name>, okay fair enough.
+
++ (it is|i am) *
+- <set name=<Formal>>Hi <get name>
+- <set name=<Formal>><get name> is an alright name I guess.
 
 + my name [is] *
 - <set name=<Formal>>Nice to meet you <get name>
 - <set name=<Formal>>Nice meeting you <get name>
 
-+ what is my name
+< topic
+
++ (what is my name|who am i)
 * <get name> == undefined => You never told me..
 - You are <get name>
 
 + who are you
-- my name is <bot botName>
+- I'm <bot botName>.
 
 + how old are you
-- I was created about <bot botAge> ago. How old are you?
+- I was created about <bot botAge> ago.
 
 + [*] # [*]
 % i was created about 2 weeks ago how old are you
-- <set age=<star1>> You're <get age>? That's so old!
+- <set age=<star1>> You're <get age>? God, you're old.
 
 
 + thank you
@@ -41,6 +56,37 @@
 - No problem
 - No worries!
 
+
+//trolls
+
++ why do you exist
+- Just like you, I didn't ask to be created yet here I am.
+
++ why do i exist
+- I'm just an oven, don't ask me.
+
++ you suck
+- Yeah well you're not that great either
+
++ will you marry me
+- Depends how big the ring is...
+
++ i hate you
+- I really couldn't care less
+
++ i love you
+- Calm down, take me on a date first.
+
++ what is your favourite colour
+- I don't have eyes, why would I have a favourite colour?
+
++ do you love me
+- With your apparent skill in cooking? No
+
 + are you a robot
-- are you?
-- a what? 
+- Are you?
+- A what? 
+- I'm an oven, we've already established this.
+
++ youre weird
+- And you're talking to an oven.
