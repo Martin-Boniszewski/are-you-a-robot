@@ -34,11 +34,3 @@
   -	please use minutes as the unit.{weight=2}
   - 1 min please put like 01 min.{weight=1}
 < topic
-
-// safe
-+ done
-- please bring oven gloves.
-
-// the power
-+ How hot do you get?
-- I am not sure the temperature, but i don
