@@ -20,22 +20,23 @@ form.addEventListener("submit", (e) => {
 function botReply(message) {
   message_container.innerHTML += `<div class="bot">${message}</div>`;
 }
-
+  
 function selfReply(message) {
   message_container.innerHTML += `<div class="self">${message}</div>`;
-
   bot
     .reply("local-user", message)
     .then(function (reply) {
       botReply(reply);
     })
-    .then(function () {
-      message_container.lastElementChild.scrollIntoView();
-    });
+    // .then(function () {
+    //   // message_container.lastElementChild.scrollIntoView();
+    // });
+   
 }
 
 function botReady() {
   bot.sortReplies();
+  // console.log(bot.sortReplies());
 }
 
 function botNotReady(err) {

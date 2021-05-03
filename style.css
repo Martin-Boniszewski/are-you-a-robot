@@ -5,11 +5,33 @@
   font-size: 12pt;
   margin: 0;
   box-sizing: border-box;
+  
+}
+
+.leading {
+  margin-top: 4rem;
 }
 
 body {
-  background: #f2f2f2;
+  background-color: #B3B3B3;
 }
+
+.circle{
+  height: 3rem;
+  width: 3rem;
+  border-radius: 3rem!important;
+}
+
+.circle-large{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 4rem!important;
+}
+
+.top{
+  border-top: black 3rem solid;
+}
+
 
 .title {
   height: 5vh;
@@ -28,10 +50,10 @@ body {
 }
 
 .chat {
-  background: white;
-  box-shadow: 10px 10px 0px blueviolet;
+  max-height: 550px;
+  min-height: 550px;
+  background-color: white;
   overflow: scroll;
-  height: 100%;
   display: flex;
   flex-direction: column;
   padding: 20px 20px 0px 20px;
@@ -74,15 +96,6 @@ body {
   background: white;
   border: 1px solid blueviolet;
   color: blueviolet;
-}
-
-.actions {
-  flex-shrink: 0;
-  width: 100%;
-  position: sticky;
-  bottom: -1px;
-  padding: 10px 0px 20px;
-  background: white;
 }
 
 .actions input {
