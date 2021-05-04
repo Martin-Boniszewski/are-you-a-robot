@@ -8,8 +8,6 @@
 
 + [*] hungry [*]
 - Well have you got some ingredients already or do you just want me to give you a recipe?
-// do you have frozen food in your freezer (Don’t capitalize and add question marks , it will make mistakes)
-- do you have frozen food in your freezer
 
 + [*] (recipe|idea) [*] 
 - What sort of cuisine do you like? {topic=recipe}
@@ -29,11 +27,11 @@
 
 + *
 % <get cuisine> huh i have never had that tell me more about it
-- To be honest that sounds great, might have to try it now.{topic=random}
+- To be honest that sounds great, might have to try it now. {topic=random}
 
 + *
 % <get cuisine> damn me too
-- I'm glad we agree...{topic=random}
+- I'm glad we agree... {topic=random}
 
 + [*] nothing [*]
 - Always the pessimist. Surely you must like something. For example.. I like Japanese food.
@@ -42,19 +40,11 @@
 - You've gotta try and help me here...
 < topic
 
-+ what did i just say
-- You just said "<input1>"
-
-+ why did you say that
-- I said "<reply1>" because you said "<input1>"
-
-
-
 
 > topic ingredients
 
 + _ [and] [_] [and] [_]
-- Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with...{topic=random}
+- Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with... {topic=random}
 
 < topic
 
@@ -95,3 +85,9 @@
 
 + youre weird
 - And you're talking to an oven.
+
++ what did i just say
+- You just said "<input1>"
+
++ why did you say that
+- I said "<reply1>" because you said "<input1>"
