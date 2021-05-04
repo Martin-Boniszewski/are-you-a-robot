@@ -1,6 +1,6 @@
 //Georgia's code
 
-+ [*] (model|model|brand) [*]
++ [*] (model|model|brand|type) [*]
 - I am Bosch HBN559.1M, what model are you?
 
 + [*][*]
