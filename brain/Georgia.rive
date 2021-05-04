@@ -1,1 +1,65 @@
 //Georgia's code
+
++ [*] (what model|model|brand) [*]
+- I am Bosch HBN559.1M, what model are you?
+
++ [*][*]
+- sure
+
++ [*] (help|assist|question|troubleshoot|turn on) [*] {topic=help}
+- I can try to assist you with the following, press the number that is appropriate /n
+^ 1 turning you on
+^ 2 setting a timer
+^ 3 cleaning you!
+^ 4 troubleshooting
+
+> topic help
+
+// This will match if the word "number" exists ANYWHERE in their message
++ [*] + [*] 1 [*] [*]
+- You're going to have to try a bit harder than this...
+^ seriously, though, have you ever turned me on before? 
+
+- [*] no [*]
+% seriously, though, have you ever turned me on before? *
+- Figures, before your first use you need to take the following steps 
+^ - ensure all packaging has been removed from my insides
+^ - an hour of top/bottom heating at 240 degrees to remove that new cooker smell
+^ - keep the kitchen vented the whole time I am on
+^ - If you had dinner plans, order a pizza, i'm not ready.
+
+- [*] yes [*]
+% seriously, though, have you ever turned me on before? *
+- Really? Well I have 2 knobs you need to turn, these are responsible for my temperature and function
+^ How you set this up will vary depending upon what meal you are cooking.
+^ I am assuming you can work out the temperature on your own?
+^ Looking at the function knob, clockwise starting at 12, the symbols indicate the following functions
+^ - Off
+^ - Top/bottom heating
+^ - 3d hot air
+^ - Pizza setting!
+^ - Bottom heating
+^ - Hot air grilling
+^ - Radiant grilling, large already
+^ - Defrosting
+^ - Rapid heating
+^ Let me know if you would like more information on any of the listed functions.
+
+- [*] top/bottom heating [*]
+% Let me know if you would like more information on any of the listed functions. *
+- Heat is spread evenly making this setting perfect for cakes, only on one level at a time.
+
+- [*] 3d hot air [*]
+- You can bake cakes, pizza, biscuits, muffins and puff pastry on two levels simultaneously.
+
+- [*] pizza [*]
+% Let me know if you would like more information on any of the listed functions. *
+- The pizza setting is good for pizza, and other frozen meals.
+
+^ {topic=help}
++ [*] + [*] 2 [*] [*]
+- {topic=help}
++ [*] + [*] 3 [*] [*]
+- {topic=help}
++ [*] + [*] 4 [*] [*]
+- {topic=help}
