@@ -9,7 +9,7 @@
 - I can help you to change the temperature. How many times do you need? {topic=times}
 
 + [*] frozen [*]
-- I can help you to change the temperature. How many times do you need? {topic=times}
+- Put in. I can help you to change the temperature. How many times do you need? {topic=times}
 
 > topic times
 
@@ -34,3 +34,18 @@
   -	please use minutes as the unit.{weight=2}
   - 1 min please put like 01 min.{weight=1}
 < topic
+
++ when can i eat
+- It depend on....
+- you didn't put anything in my mouths, how about hot air?
+
++ done
+- please bring oven gloves keep safe.
+
++ [*]button[*]
+- just try them.
+- booooooom!
+
++ [*](refresh|refreshing)[*]
+- it is not my fault, you clicked the explode button!
+

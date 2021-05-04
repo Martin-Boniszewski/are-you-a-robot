@@ -28,9 +28,9 @@ function selfReply(message) {
     .then(function (reply) {
       botReply(reply);
     })
-    // .then(function () {
-    //   // message_container.lastElementChild.scrollIntoView();
-    // });
+    .then(function () {
+       message_container.lastElementChild.scrollIntoView();
+    });
    
 }
 
