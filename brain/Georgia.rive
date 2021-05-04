@@ -7,11 +7,11 @@
 - sure
 
 + [*] (help|assist|question|troubleshoot|turn on) [*] {topic=help}
-- I can try to assist you with the following, press the number that is appropriate /n
-^ 1 turning you on
-^ 2 setting a timer
-^ 3 cleaning you!
-^ 4 troubleshooting
+- I can try to assist us with the following, press the number that is appropriate /n
+^ 1 Turning you on
+^ 2 Setting a timer
+^ 3 Cleaning you!
+^ 4 Troubleshooting
 
 > topic help
 
@@ -20,7 +20,7 @@
 - You're going to have to try a bit harder than this...
 ^ seriously, though, have you ever turned me on before? 
 
-- [*] no [*]
++ [*] no [*]
 % seriously, though, have you ever turned me on before? *
 - Figures, before your first use you need to take the following steps 
 ^ - ensure all packaging has been removed from my insides
@@ -28,7 +28,7 @@
 ^ - keep the kitchen vented the whole time I am on
 ^ - If you had dinner plans, order a pizza, i'm not ready.
 
-- [*] yes [*]
++ [*] yes [*]
 % seriously, though, have you ever turned me on before? *
 - Really? Well I have 2 knobs you need to turn, these are responsible for my temperature and function
 ^ How you set this up will vary depending upon what meal you are cooking.
@@ -45,21 +45,16 @@
 ^ - Rapid heating
 ^ Let me know if you would like more information on any of the listed functions.
 
-- [*] top/bottom heating [*]
++ [*] top bottom heating [*]
 % Let me know if you would like more information on any of the listed functions. *
 - Heat is spread evenly making this setting perfect for cakes, only on one level at a time.
 
-- [*] 3d hot air [*]
++ [*] 3d hot air [*]
+% Let me know if you would like more information on any of the listed functions. *
 - You can bake cakes, pizza, biscuits, muffins and puff pastry on two levels simultaneously.
 
-- [*] pizza [*]
++ [*] pizza [*]
 % Let me know if you would like more information on any of the listed functions. *
-- The pizza setting is good for pizza, and other frozen meals.
+- The pizza setting is good for pizza (surprise), and other frozen meals.
 
-^ {topic=help}
-+ [*] + [*] 2 [*] [*]
-- {topic=help}
-+ [*] + [*] 3 [*] [*]
-- {topic=help}
-+ [*] + [*] 4 [*] [*]
-- {topic=help}
+< topic 
