@@ -13,13 +13,18 @@
 }
 
 body {
-  background-color: #B3B3B3;
+  background-image: url("image/background.jpg");
 }
 
 .circle{
   height: 3rem;
   width: 3rem;
   border-radius: 3rem!important;
+}
+
+.buttonimage{
+  background-image: url("image/button_5.jpg");
+  background-size: cover;
 }
 
 .circle-large{
@@ -42,7 +47,7 @@ body {
 
 .title h1 {
   letter-spacing: 0.75px;
-  color: blueviolet;
+  color: rgb(33, 30, 68);
 }
 
 .wrapper {
@@ -52,7 +57,7 @@ body {
 .chat {
   max-height: 550px;
   min-height: 550px;
-  background-color: white;
+  background-color: gray;
   overflow: scroll;
   display: flex;
   flex-direction: column;

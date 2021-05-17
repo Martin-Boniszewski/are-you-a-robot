@@ -16,14 +16,17 @@
     </div>
     <div class="container leading ">
       <div class="row">
-        <div class="col-md-8">
+        <div class="col-md-5">
           <button onclick="refresh()" id="001" class="btn btn-dark rounded circle"></button>
-          <button id="002" class="btn btn-dark rounded circle"></button>
+          <button onclick="changelight()" id="002"  class="btn btn-dark rounded circle"></button>
           <button id="003" class="btn btn-dark rounded circle"></button>
           <button id="004" class="btn btn-dark rounded circle"></button>
         </div>
+        <div class="col-md-3">
+          <h1>HHHH</h1>
+        </div>
         <div class="col-md-4">
-          <button id="005" class="btn btn-dark rounded circle-large"></button>
+          <button id="005" class="btn btn-dark rounded circle-large buttonimage"></button>
           <button id="006" class="btn btn-dark rounded circle-large"></button>
         </div>
       </div>
@@ -46,6 +49,13 @@
     <script>
       function refresh(){
         location.reload();
+      }
+      function changelight(){
+        if (document.getElementById('chat').style.background == 'gray'){
+          document.getElementById('chat').style.background = 'white';
+        } else {
+          document.getElementById('chat').style.background = 'gray';
+        }
       }
     </script>
   </body>
