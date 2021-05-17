@@ -65,6 +65,10 @@ body {
   border-radius: 10px;
 }
 
+.messages-image{
+  width: 100%;
+}
+
 .messages {
   flex: 1 0 auto;
 }
