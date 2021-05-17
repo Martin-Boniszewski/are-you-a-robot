@@ -6,17 +6,19 @@
 + [*][*]
 - sure
 
-+ [*] (help|assist|question|troubleshoot|turn on) [*] 
++ [*] (help|assist|question|troubleshoot|turn on|clean|timer|on) [*] 
 - I can try to assist us with the following, press the number that is appropriate \n 
-^ 1 Turn me on \n
-^ 2 Setting a timer \n
-^ 3 Clean me! \n
-^ 4 Troubleshooting {topic=help}
+^ 1. Turn me on \n
+^ 2. Setting a timer \n
+^ 3. Clean me! \n
+^ 4. Troubleshooting {topic=help}
 
 > topic help
 
 // This will match if the word "number" exists ANYWHERE in their message
-+ [*] 1 [*]
+% troubleshooting
+
++ [*] (1|one|on|turn on|turn me on) [*]
 - You're going to have to try a bit harder than this... \n
 ^ seriously, though, have you ever turned me on before? 
 
@@ -49,7 +51,7 @@
 % * just let me know which 
 - Heat is spread evenly making this setting perfect for cakes, only on one level at a time.
 
-+ [*] 3d hot air [*]
++ [*] (3d|hot air) [*]
 % * just let me know which 
 - You can bake cakes, pizza, biscuits, muffins and puff pastry on two levels simultaneously.
 
@@ -69,15 +71,15 @@
 % * just let me know which 
 - Suitable for grilling small quantities of steak, sausages, fish, and toast.
 
-+ [*] defrosting [*]
++ [*] (defrosting|defrost) [*]
 % * just let me know which
 - For defrosting...
 
 + [*] rapid [*]
 % * just let me know which
-- For rapidly heating dishes, not food.
+- For rapidly heating plates and dishes, not food.
 
-+ [*] 2 [*]
++ [*] (2|two|timer)[*]
 - The timer works independently of the oven. The timer has its \n
 ^ own beep. \n
 ^ - Press the timer button once, this is the one with the clock symbol. \n
@@ -87,23 +89,90 @@
 ^ on the display panel and the timer's progress is shown. The \n
 ^ other time symbols switch off.
 
-+ [*] 3 [*]
-- With good care, I  will remain clean and fully-functioning\n
++ [*] (3|three|clean|cleaning)[*]
+- With good care, I  will remain clean and fully-functioning \n
 ^ for a long time to come. Here I will explain how to \n
 ^ maintain me correctly. \n
 ^ Which part would you like to clean? \n
 ^ - Control panel \n
 ^ - Stainless steel surfaces \n
 ^ - Enamel or lacquered surfaces \n
-^ - Rotary knobs
-^ - Glass panel 
-^ - Seal 
+^ - Rotary knobs \n
+^ - Glass panel \n
+^ - Seal  \n
 ^ - Oven floor, ceiling and side panels \n
-^ - Glass cover for my light \n
+^ - Light cover \n
 ^ - Equipment
 
 + [*] control [*]
-% * glass cover for my light equipment
-- ok 
+% * light cover equipment
+- Hot soapy water: Clean with a dish cloth and dry with a soft \n
+^ cloth. Do not use glass cleaner or scrapers.
 
++ [*] (stainless|steel) [*]
+% * light cover equipment
+- Clean with warm soapy water and a soft cloth. \n
+^ Always wipe parallel to the natural grain. \n
+^ Dry with a soft cloth. \n
+^ Do not use any abrasive materials, scouring \n  
+^ sponges or rough cleaning cloths. 
+
++ [*] (enamel|lacquered|lacquer)  [*]
+% * light cover equipment
+- Wipe with warm soapy water and a cloth. \n
+^ Dry with a soft cloth.
+
++ [*] (rotary|knobs) [*]
+% * light cover equipment
+- Wipe with warm soapy water and a cloth. \n
+^ Dry with a soft cloth.
+
++ [*] glass [*]
+% * light cover equipment
+- Clean using glass cleaner. Do not use any \n
+^ abrasive cleaning agents or sharp metal \n
+^ objects.
+
++ [*] seal [*]
+% * light cover equipment
+- Wipe with a warm damp cloth. \n
+^ Dry with a soft cloth.
+
++ [*] (floor|ceiling|side) [*]
+% * light cover equipment
+- Warm soapy water or a vinegar solution. If \n
+^ there are heavy deposits of dirt, only use oven \n
+^ cleaner on cooled surfaces. Never apply to \n
+the back panel.
+
++ [*] (light|cover) [*]
+% * light cover equipment
+- Wipe with warm soapy water and a cloth. \n
+^ Dry with a soft cloth.
+
++ [*] equipment [*]
+% * light cover equipment
+- Soak in warm soapy water. Clean with a brush \n
+^ or sponge.\n
+
++ [*] (4|four|trouble|troubleshoot|troubleshooting) [*]
+
++ *
+- Do you need help with anything else? {weight=2}
+- Are you still confused? {weight=1}
+
++ [*] (yes|yeah|yea|yah|yep) [*]
+% (do you need help with anything else|are you still confused)
+- No problem, I can try to assist us with the following, press the number that is appropriate \n 
+^ 1. Turn me on \n
+^ 2. Setting a timer \n
+^ 3. Clean me! \n
+^ 4. Troubleshooting 
+
++ [*] (no|nope|nah|ni|noo|nay) [*]
+% (do you need help with anything else|are you still confused)
+- Cool! {topic=random}
+- That wasn't too hard! {topic=random}
+- Great, anyways... {topic=random}
+- Finally {topic=random}
 < topic 
