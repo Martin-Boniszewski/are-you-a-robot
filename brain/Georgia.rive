@@ -7,10 +7,10 @@
 - sure
 
 + [*] (help|assist|question|troubleshoot|turn on) [*] 
-- I can try to assist us with the following, press the number that is appropriate /n 
-^ 1 Turning you on \n
+- I can try to assist us with the following, press the number that is appropriate \n 
+^ 1 Turn me on \n
 ^ 2 Setting a timer \n
-^ 3 Cleaning you! \n
+^ 3 Clean me! \n
 ^ 4 Troubleshooting {topic=help}
 
 > topic help
@@ -21,7 +21,7 @@
 ^ seriously, though, have you ever turned me on before? 
 
 + [*] no [*]
-% seriously though have you ever turned me on before *
+% you are going to have to try a bit harder than this seriously though have you ever turned me on before
 - Figures, before your first use you need to take the following steps \n 
 ^ - ensure all packaging has been removed from my insides \n
 ^ - an hour of top/bottom heating at 240 degrees to remove that new cooker smell \n
@@ -29,13 +29,13 @@
 ^ - If you had dinner plans, order a pizza, i'm not ready.
 
 + [*] yes [*]
-% seriously though have you ever turned me on before *
+% you are going to have to try a bit harder than this seriously though have you ever turned me on before
 - Really? Well I have 2 knobs you need to turn, these are responsible for my temperature and function \n
 ^ How you set this up will vary depending upon what meal you are cooking. \n
 ^ I am assuming you can work out the temperature on your own? \n
 ^ Looking at the function knob, clockwise starting at 12, the symbols indicate the following functions \n
 ^ - Off \n
-^ - Top/bottom heating \n
+^ - Top bottom heating \n
 ^ - 3d hot air \n
 ^ - Pizza setting! \n
 ^ - Bottom heating \n
@@ -43,18 +43,67 @@
 ^ - Radiant grilling, large already \n
 ^ - Defrosting \n
 ^ - Rapid heating \n
-^ Let me know if you would like more information on any of the listed functions.
+^ If you would like any further information on any of the functions just let me know which!
 
 + [*] top bottom heating [*]
-% let me know if you would like more information on any of the listed functions *
+% * just let me know which 
 - Heat is spread evenly making this setting perfect for cakes, only on one level at a time.
 
 + [*] 3d hot air [*]
-% let me know if you would like more information on any of the listed functions *
+% * just let me know which 
 - You can bake cakes, pizza, biscuits, muffins and puff pastry on two levels simultaneously.
 
 + [*] pizza [*]
-% let me know if you would like more information on any of the listed functions *
-- The pizza setting is good for pizza (surprise), and other frozen meals.
+% * just let me know which 
+- The pizza setting is good for pizza (shocker), and other frozen meals.
+
++ [*] bottom heating [*]
+% * just let me know which 
+- You can use this for the final baking stage and browning meals.
+
++ [*] hot air grilling [*]
+% * just let me know which 
+- For grilling fish, poultry and large pieces of meat.
+
++ [*] radiant grilling [*]
+% * just let me know which 
+- Suitable for grilling small quantities of steak, sausages, fish, and toast.
+
++ [*] defrosting [*]
+% * just let me know which
+- For defrosting...
+
++ [*] rapid [*]
+% * just let me know which
+- For rapidly heating dishes, not food.
+
++ [*] 2 [*]
+- The timer works independently of the oven. The timer has its \n
+^ own beep. \n
+^ - Press the timer button once, this is the one with the clock symbol. \n
+^ - set the timer using the @ or A button \n
+^ The programmed time is shown after a few seconds. The time \n
+^ set for the timer starts to count down. The symbol lights up \n
+^ on the display panel and the timer's progress is shown. The \n
+^ other time symbols switch off.
+
++ [*] 3 [*]
+- With good care, I  will remain clean and fully-functioning\n
+^ for a long time to come. Here I will explain how to \n
+^ maintain me correctly. \n
+^ Which part would you like to clean? \n
+^ - Control panel \n
+^ - Stainless steel surfaces \n
+^ - Enamel or lacquered surfaces \n
+^ - Rotary knobs
+^ - Glass panel 
+^ - Seal 
+^ - Oven floor, ceiling and side panels \n
+^ - Glass cover for my light \n
+^ - Equipment
+
++ [*] control [*]
+% * glass cover for my light equipment
+- ok 
 
 < topic 
