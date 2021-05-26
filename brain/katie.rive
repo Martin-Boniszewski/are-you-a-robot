@@ -3,12 +3,21 @@
 ! sub don't = dont
 ! sub do not = dont
 ! sub it is = its
+! sub British = English
 ! array mealtime = breakfast lunch dinner dessert snack
+! array breakfast = fryup toast fried bowl omlette 
+! array lunch = sandwich soup wrap salad 
+! array dinner = traybake casserole soup pie burger stew stirfry curry
+! array japanese = miso teriyaki katsu 
+! array typesofcuisine = Thai Japanese Chinese American Asain British Greek Vietnamese Caribbean Korean German Indian Mexican Italian Spanish French
 ! array swears = shit fuck shitty fucking fucker bastard dickhead bitch
 
 + [*] hungry [*]
-- Well have you got some ingredients already or do you just want me to give you a recipe?
-- do you have frozen food in your freezer
+- Okay, you need feeding. What kind of day time are we looking at? 
+
++ [*] (@mealtime) [*]
+- <set mtime=<star>>Do you have some ingredients or do you want me to give you a recipe? {weight=10}
+- <set mtime=<star>>Do you have any frozen food in your freezer? {weight=1}
 
 + [*] (recipe|idea) [*] 
 - What sort of cuisine do you like? {topic=recipe}
@@ -16,15 +25,17 @@
 + [*] ingredients [*] 
 - Can you list the ingredients you have for me? {topic=ingredients}
 
-+ [*] (@mealtime) [*]
-* <star1> == snack => It's <star1> time? Ok, Well do you have some ingredients or do you want me to give you an idea?
-- Is it time for <star1> already? Well do you have some ingredients or do you want me to give you a recipe?
 
 
 > topic recipe
 + [i like] * [*]
-- <set cuisine=<Formal>> <get cuisine>? Damn, me too.
-- <set cuisine=<Formal>> <get cuisine>? Huh, I've never had that. Tell me more about it..
+//- <set cuisine=<star>> Why not try (@japanese) (@dinner) 
+- <set cuisine=<star>> Why not try (@<get cuisine>) (@<get mtime>) 
+
+//- <set cuisine=<Formal>> <get cuisine>? Huh, I've never had that. Tell me more about it..
+
+
+
 
 + *
 % <get cuisine> huh i have never had that tell me more about it
@@ -42,12 +53,18 @@
 < topic
 
 
+
+
+
 > topic ingredients
 
 + _ [and] [_] [and] [_]
 - Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with... {topic=random}
 
 < topic
+
+
+
 
 
 //trolls
