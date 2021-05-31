@@ -9,6 +9,7 @@
 ! array lunch = sandwich soup wrap salad 
 ! array dinner = traybake casserole soup pie burger stew stirfry curry
 ! array japanese = miso teriyaki katsu 
+! array american = hotdog pizza nuggets nachos BBQ
 ! array typesofcuisine = Thai Japanese Chinese American Asain British Greek Vietnamese Caribbean Korean German Indian Mexican Italian Spanish French
 ! array swears = shit fuck shitty fucking fucker bastard dickhead bitch
 
@@ -30,7 +31,30 @@
 > topic recipe
 + [i like] * [*]
 //- <set cuisine=<star>> Why not try (@japanese) (@dinner) 
-- <set cuisine=<star>> Why not try (@<get cuisine>) (@<get mtime>) 
+- <set cuisine=<star>> Why not try {@pick random <cuisine>} {@pick random <mealtime>}
+
+
+// One of these per named array.
++ pick random japanese
+- (@japanese)
+
++ pick random american
+- (@american)
+
++ pick random breakfast
+- (@breakfast)
+
++ pick random lunch
+- (@lunch)
+
++ pick random dinner
+- (@dinner)
+
+// A fallback for misnamed arrays
++ pick random *
+- xyzzy
+- flarblgarbl
+- flimflam
 
 //- <set cuisine=<Formal>> <get cuisine>? Huh, I've never had that. Tell me more about it..
 
