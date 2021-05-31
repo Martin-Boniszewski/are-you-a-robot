@@ -13,7 +13,7 @@
 + [*] (ready|start|proceed|started) [*]
 - Great! Lets get this food cooked, *fan and light turn on*
 
-+ [*] (how is it going|how is my food doing|how is the food going|update?|any updates?|any updates on the food?) [*]
++ [*] (how is it going|how is my food doing|how is the food going|update|any updates|any updates on the food) [*]
 - IT'S BURNT! {weight=2}
 - IT'S ON FIRE!!{weight=1}
 - Burnt beyond edible {weight=3}
