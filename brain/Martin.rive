@@ -3,11 +3,11 @@
 ! sub hiya = hello
 
 + [*] (time|cooking time|lenght|minutes|hours|seconds) [*]
-+ The food needs # minutes
++ the food needs # minutes
 - Okay! The food will cook for # minutes
-+ The food needs # hours
++ the food needs # hours
 - Okay! The food will cook for # hours
-+ The food needs # seconds
++ the food needs # seconds
 - Are you dumb? Nohting can cook that fast?!
 
 + [*] (ready|start|proceed|started) [*]
