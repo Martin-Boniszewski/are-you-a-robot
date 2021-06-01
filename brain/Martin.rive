@@ -3,15 +3,15 @@
 ! sub hiya = hello
 
 + [*] (time|cooking time|lenght|minutes|hours|seconds) [*]
-+ The food needs # minutes
-- Okay! The food will cook for # minutes
-+ The food needs # hours
-- Okay! The food will cook for # hours
-+ The food needs # seconds
-- Are you dumb? Nohting can cook that fast?!
++ the food needs # minutes
+- okay! The food will cook for # minutes
++ the food needs # hours
+- okay! The food will cook for # hours
++ the food needs # seconds
+- are you dumb? Nohting can cook that fast?!
 
 + [*] (ready|start|proceed|started) [*]
-- Great! Lets get this food cooked, *fan and light turn on*
+- great! Lets get this food cooked *fan and light turn on*
 
 + [*] (how is it going|how is my food doing|how is the food going|update?|any updates?|any updates on the food?) [*]
 - IT'S BURNT! {weight=2}
