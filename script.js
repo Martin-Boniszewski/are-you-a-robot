@@ -35,8 +35,7 @@ function selfReply(message) {
 }
 
 function botReady() {
-  bot.sortReplies();
-  // console.log(bot.sortReplies());
+  bot.sortReplies(); 
 }
 
 function botNotReady(err) {

@@ -1,7 +1,7 @@
 //Naiwen's code
 
 + [*] no [*]
-% do you have frozen food in your freezer
+% do you have any frozen food in your freezer
 - Well have you got some ingredients already or do you just want me to give you a recipe?
 
 + [*] yes [*]
