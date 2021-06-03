@@ -32,20 +32,9 @@
 - I'm fine. Would be better if I had something to cook...
 - I'm okay, bit bored though. Got something for me to do?
 
-<<<<<<< Updated upstream
 + what is your name
 - I already told you, duh. It's <bot botName>.
 - Forgotten already? It's <bot botName>.
-=======
-+ hello 
-- Yo, what's up?
-
-+ good morning 
-- I'ts the afternoon
-
-+ how are you
-- I'm well :-)
->>>>>>> Stashed changes
 
 + (what is my name|who am i)
 * <get name> == undefined => You never told me..
@@ -67,7 +56,6 @@
 - No problem
 - No worries!
 
-<<<<<<< Updated upstream
 + what [can|do] you do
 - Have you never used an oven before? I can give you operating information, recipe ideas, or tell you how you meal is going.
 
@@ -75,13 +63,3 @@
 
 
 
-=======
-+ *
-- Sorry did not get what you said
-- I am afraid that I can not understand you
-- Sorry can you please elaborate that for me
-- I don't get it!
-
-+ * 
-- <star>
->>>>>>> Stashed changes
