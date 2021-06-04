@@ -5,7 +5,9 @@
   font-size: 12pt;
   margin: 0;
   box-sizing: border-box;
-  cursor:url("image/oven\ gloves.png"),auto;
+  cursor:url("image/mitts_open.png"),auto;
+
+  
 }
 
 .leading {
