@@ -23,8 +23,11 @@
 ! array typesofcuisine = thai japanese chinese american vietnamese korean indian mexican italian spanish french
 ! array swears = shit fuck shitty fucking fucker bastard dickhead bitch
 
-+ [*] (hungry|food|recipe) [*]
++ [*] (hungry|food|recipe|cuisine) [*]
 - Okay, you need feeding. What kind of day time are we looking at?  {topic=katie}
+
++ [*] (@typesofcuisine) [*]
+- <set cuisine=<star>>Okay, what kind of day time are we looking at?  {topic=katie}
 
 + [*] (@mealtime) [*]
 - <set mtime=<star>>Do you have some ingredients or do you want me to give you a recipe? {weight=10} {topic=katie}
@@ -35,7 +38,8 @@
 //- <set mtime=<star>>Do you have any frozen food in your freezer? {weight=1}
 
 + [*] (recipe|idea) [*] 
-- What sort of cuisine do you like? {topic=recipe}
+* <get cuisine> == undefined => What sort of cuisine do you like? {topic=findcuisine}
+- What was the cuisine again? {topic=findcuisine}
 
 + [*] ingredients [*] 
 - Can you list 3 ingredients you have for me? {topic=ingredients}
@@ -43,16 +47,21 @@
 + *
 - Is that a mealtime or are you just chatting nonsense? Try again.
 
+> topic findcuisine
++ [*] (@typesofcuisine) [*]
+-  <set cuisine=<star>>Why not try a {@pick random <get cuisine>} {@pick random <get mtime>}? {topic=recipe}
+
++ *
+- Too obscure, try again.
+< topic
 
 > topic recipe
-+ [i like] * [*]
-//* <set cuisine=<star>> <get cuisine> = (@typesofcuisine) => I do know that type, it is <get cuisine>
-- <set cuisine=<star>> Why not try a {@pick random <get cuisine>} {@pick random <get mtime>}?
 
-+ [*] (something else|another|bad|stupid|no|ew|nope) [*]
++ [*] (something else|another|bad|stupid|no|ew|nope|unsure) [*]
 - Okay, why not try a {@pick random <get cuisine>} {@pick random <get mtime>}?
 - Ummm, try a {@pick random <get cuisine>} {@pick random <get mtime>}?
 - Have you thought of a {@pick random <get cuisine>} {@pick random <get mtime>}?
+
 
 // One of these per named array.
 + pick random thai
@@ -77,6 +86,8 @@
 - <set choice1=(@spanish)> <get choice1>
 + pick random french
 - <set choice1=(@french)> <get choice1>
++ pick random british
+- <set choice1=(@british)> <get choice1>
 
 
 + pick random breakfast
@@ -87,8 +98,8 @@
 - <set choice2=(@dinner)> <get choice2>
 
 
-+ [sounds] (good|ok|alright|fine|okay|soso|yes|sure|yeah|yup|thats the one) [*]
-- Cool. Here's some links to recipes (right click and open in a new tab): <a href="http://www.bbc.co.uk/food/search?q=<get choice1>+<get choice2>">Try this link</a> or <a href="http://www.allrecipes.co.uk/recipes/searchresults.aspx?text=<get choice1>%20<get choice2>&o_is=Search"> try this one</a> 
++ [*] [sounds] (good|alright|fine|soso|yes|sure|yeah|yup|thats the one|great|fab|link|hyperlink) [*]
+- Cool. Here's some links to recipes (right click and open in a new tab): <a href="http://www.bbc.co.uk/food/search?q=<get choice1>+<get choice2>">Try this link</a> or <a href="http://www.allrecipes.co.uk/recipes/searchresults.aspx?text=<get choice1>%20<get choice2>&o_is=Search"> try this one</a> {topic=random}
 
 
 + [*] nothing [*]
@@ -97,8 +108,9 @@
 + (idk|i dont know)
 - You've gotta try and help me here...
 
-+ [*]
-- Did you want anything else? {topic=random}
++ (thanks|thank you|cheers|cool)
+- Just doing my job, is there something else you needed?{topic=random}
+
 < topic
 
 
@@ -106,6 +118,7 @@
 + * [and] * [and] *
 - Okay so you have some <star1>, <star2>, and <star3>. Let me see what i can come up with... Heres some links to recipes (right click and open in a new tab): <a href="https://tasty.co/search?q=<star1>+<star2>+<star3>&sort=popular">Try this link</a> or <a href="http://www.allrecipes.co.uk/recipes/searchresults.aspx?text=<get choice1>%20<get choice2>&o_is=Search"> try this one</a> {topic=random}
 < topic
+
 < topic
 
 

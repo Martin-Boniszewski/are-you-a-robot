@@ -9,7 +9,7 @@
 
 + [*] (hello|hi|yo|hey|hiya) [*]
 - Hello, I'm an oven. What's your name? {weight=3} {topic=name}
-- Hi there! I'm <bot botName>. How are you today? {weight=2}
+- Hi, I'm an oven. You alright? 
 - Hey, it's me, <bot botName>. What do you want? {weight=1}
 
 > topic name
@@ -20,7 +20,8 @@
 - <set name=<Formal>><get name> is an alright name I guess.{topic=random}
 < topic
 
-+ [i am] (good|ok|alright|fine|okay|soso) [*]
++ [*] [i am] (good|ok|alright|fine|okay|soso|yep) [*]
+% hello i am an oven you alright
 - Glad someone is feeling alright. What do you want?
 
 + [i am] (bad|meh|not good|tired|ill|under the weather) [*]
@@ -51,15 +52,14 @@
 - <set age=<star1>> You're <get age>? God, you're old.
 
 + (thank you|thanks)
-- You are welcome
-- Welcome
-- No problem
-- No worries!
+- Just my job
+- Just doing what I was made for
+- That's alright
 
-+ what [can|do] you do
++ [*] what [else] [can|do] you do [*]
 - Have you never used an oven before? I can give you operating information, recipe ideas, or tell you how you meal is going.
 
-
-
++ [*] sorry [*]
+- Forget about it.
 
 
