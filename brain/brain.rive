@@ -38,8 +38,9 @@
 - Forgotten already? It's <bot botName>.
 
 + (what is my name|who am i)
-* <get name> == undefined => You never told me..
+* <get name> == undefined => You never told me.. What is your name?{topic=name}
 - You are <get name>
+
 
 + who are you
 - I'm <bot botName>.
@@ -52,8 +53,7 @@
 - <set age=<star1>> You're <get age>? God, you're old.
 
 + (thank you|thanks)
-- Just my job
-- Just doing what I was made for
+- No problem
 - That's alright
 
 + [*] what [else] [can|do] you do [*]

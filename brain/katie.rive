@@ -46,6 +46,8 @@
 
 + *
 - Is that a mealtime or are you just chatting nonsense? Try again.
++ (nevermind|dont want|changed my mind|i have changed my mind)
+- Alrighty then.{topic=random}
 
 > topic findcuisine
 + [*] (@typesofcuisine) [*]
@@ -54,7 +56,7 @@
 + *
 - Too obscure, try again.
 
-+ (nevermind|dont want)
++ (nevermind|dont want|changed my mind|i have changed my mind)
 - Alrighty then.{topic=random}
 < topic
 
@@ -114,6 +116,9 @@
 + (thanks|thank you|cheers|cool)
 - Just doing my job, is there something else you needed?{topic=random}
 
++ (nevermind|dont want|changed my mind|i have changed my mind)
+- Alrighty then.{topic=random}
+
 < topic
 
 
@@ -162,7 +167,7 @@
 - A what? 
 - I'm an oven, we've already established this.
 
-+ youre weird
++ you are weird
 - And you're talking to an oven.
 
 + what did i just say
