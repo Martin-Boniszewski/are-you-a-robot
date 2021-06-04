@@ -53,6 +53,9 @@
 
 + *
 - Too obscure, try again.
+
++ (nevermind|dont want)
+- Alrighty then.{topic=random}
 < topic
 
 > topic recipe
