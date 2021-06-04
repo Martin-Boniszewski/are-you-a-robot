@@ -5,7 +5,7 @@
   font-size: 12pt;
   margin: 0;
   box-sizing: border-box;
-  cursor:url("image/oven\ gloves.png"),auto;
+  cursor:url("image/gloves.png"),auto;
 }
 
 .leading {
@@ -138,3 +138,11 @@ input:focus {
     height: 7.5vh;
   }
 }
+
+.temper {
+  height: 100%;
+  width: 100%;
+  color: #17D4FE;
+  font-size: 12px;
+  font-family: Orbitron;
+ }
