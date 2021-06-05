@@ -5,7 +5,7 @@
   font-size: 12pt;
   margin: 0;
   box-sizing: border-box;
-  cursor:url("image/gloves.png"),auto;
+  cursor:url("image/gloves.png"),default;
 }
 
 .leading {
@@ -20,6 +20,30 @@ body {
   height: 3rem;
   width: 3rem;
   border-radius: 3rem!important;
+}
+
+button:nth-child(1) {
+  cursor: url("image/gloves2.png"),auto;
+}
+
+button:nth-child(2) {
+  cursor: url("image/gloves2.png"),auto;
+}
+
+button:nth-child(3) {
+  cursor: url("image/gloves2.png"),auto;
+}
+
+button:nth-child(4) {
+  cursor: url("image/gloves2.png"),auto;
+}
+
+button:nth-child(5) {
+  cursor: url("image/gloves2.png"),auto;
+}
+
+button:nth-child(6) {
+  cursor: url("image/gloves2.png"),auto;
 }
 
 .buttonimage{
