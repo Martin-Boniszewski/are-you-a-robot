@@ -16,8 +16,9 @@
 + [it is|its|i am|my name is] *
 //short discussions cant use abbreviations as rivescript removes these in its code
 % hello i am an oven what is your name
+* <set name=<star>><get name> == hungry => Hi Hungry I'm oven.{topic=random}
 - <set name=<Formal>>Hi <get name>{topic=random}
-- <set name=<Formal>><get name> is an alright name I guess.{topic=random}
+- <set name=<Formal>>Hi <get name>{topic=random}
 < topic
 
 + [*] [i am] (good|ok|alright|fine|okay|soso|yep) [*]
@@ -61,5 +62,9 @@
 
 + [*] sorry [*]
 - Forget about it.
+
++ [*] (lol|haha|hah|rofl) [*]
+- Damn I'm funny.
+- I sure am funny.
 
 
