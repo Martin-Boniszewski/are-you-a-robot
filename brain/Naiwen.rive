@@ -29,9 +29,9 @@
 
   + *
   -	How much time do you need, it must be shown on the package. 
-  -	please check the package.
-  -	please use minutes as the unit.{weight=2}
-  - 1 min please put like 01 min.{weight=1}
+  -	Please check the package.
+  -	Please use minutes as the unit.{weight=2}
+  - For example, for 1 min please put 01 min.{weight=1}
 < topic
 
 + when can i eat
