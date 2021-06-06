@@ -102,6 +102,9 @@
 + pick random dinner
 - <set choice2=(@dinner)> <get choice2>
 
++ * [*]
+- Pardon?
+- Are you happy with the option i gave?
 
 + [*] [sounds] (good|alright|fine|soso|yes|sure|yeah|yup|thats the one|great|fab|link|hyperlink) [*]
 - Cool. Here's some links to recipes (right click and open in a new tab): <a href="http://www.bbc.co.uk/food/search?q=<get choice1>+<get choice2>">Try this link</a> or <a href="http://www.allrecipes.co.uk/recipes/searchresults.aspx?text=<get choice1>%20<get choice2>&o_is=Search"> try this one</a> {topic=random}
