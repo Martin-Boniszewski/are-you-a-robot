@@ -6,27 +6,26 @@
 
 + [*] yes [*]
 % do you have frozen food in your freezer
-- I can help you to change the temperature. How many times do you need? {topic=times}
+- I can help you change the temperature. How much time do you need? {topic=times}
 
 + [*] frozen [*]
-- Put in. I can help you to change the temperature. How many times do you need? {topic=times}
+- Put the food in me. I can help you change the temperature. How much time do you need? {topic=times}
 
 > topic times
 
   // This will match if the word " number " exists ANYWHERE in their message
   + [*] 20|21|22|23|24|25|26|27|28|29|30|31|32|33|34|35 [*]
-  - it will be delicious {topic=random}
+  - It will be delicious. {topic=random}
   + [*] 36|37|38|39|40|60|45|50|55 [*]
-  - it maybe fine. {topic=random}
-  - overcooked.
-  - hope it can not be carb. 
+  - It may be fine. {topic=random}
+  - It's overcooked.
   + [*] 01|02|03|04|05|06|07|08|09|10|11|12|13|14|15|16|17|18|19 [*]
-  - this fish is so raw, he’s still finding nemo.
-  - it’s raw!
-  - this pork is so raw, it is still singing 'hakuna matata'.
-  - this food is so frozen, it just started singing 'let it go'.
-  - that chicken has so much raw, it can still across the road.
-  - this potato is so undercooked, it can still play a part in toy story.
+  - This fish is so raw, he’s still finding nemo.
+  - It’s raw!
+  - This pork is so raw, it is still singing 'hakuna matata'.
+  - This food is so frozen, it just started singing 'let it go'.
+  - That chicken is so raw, it can still cross the road.
+  - This potato is so undercooked, it can still play a part in toy story.
 
   + *
   -	How much time do you need, it must be shown on the package. 
@@ -36,8 +35,8 @@
 < topic
 
 + when can i eat
-- It depend on....
-- you didn't put anything in my mouths, how about hot air?
+- It depends.
+- You haven't put anything in me, how about hot air?
 
 + done
 - Please bring oven gloves keep safe.
@@ -47,7 +46,7 @@
 - Boooooom!
 
 + [*](refresh|refreshing)[*]
-- It is not my fault, you clicked the explode button!
+- It's not my fault, you clicked the explode button!
 
 + [*] cursor [*]
-- the mitts is keep your safe.
+- The mitts keep you safe.

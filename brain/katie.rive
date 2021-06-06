@@ -124,6 +124,7 @@
 
 > topic ingredients
 + [i have|i have got] * [and] * [and] * [*]
+* <star> == undefined => 
 - So you have <star1>, <star2>, and <star3>.  Let me see what i can come up with... Heres some links to recipes (right click and open in a new tab): <a href="https://tasty.co/search?q=<star1>+<star2>+<star3>&sort=popular">Try this link</a> or <a href="http://www.allrecipes.co.uk/recipes/searchresults.aspx?text=<get choice1>%20<get choice2>&o_is=Search"> try this one</a> {topic=random}
 
 + (nevermind|dont want|changed my mind|i have changed my mind)
